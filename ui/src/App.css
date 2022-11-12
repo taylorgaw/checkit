@@ -38,7 +38,10 @@
 }
 
 .leaflet-container {
-  height: 650px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
 }
 
 .spot-icon {
@@ -53,12 +56,4 @@
   height: 30px;
   content: "🔴";
   font-size: 20px;
-}
-
-#placeNewMarkerButton {
-	position: absolute;
-	right: 25px;
-	top: 25px;
-	z-index: 1000000;
-	font-size: 1.5em;
 }

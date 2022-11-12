@@ -13,7 +13,6 @@ function App() {
 
   return (
     <div className="App">
-      <h1>{map.name}</h1>
       <MapContainer
             center={position} 
             zoom={map.zoom}

@@ -4,7 +4,7 @@ import { Marker, TileLayer, Popup } from 'react-leaflet';
 
 import  { UserMap, Spot } from '../resources/MapResources'
 import SpotPopup from './SpotPopup';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 type FavoritesMapProps = {
     collection: UserMap;
@@ -12,7 +12,12 @@ type FavoritesMapProps = {
 
 const FavoritesMap: React.FC<FavoritesMapProps> = (props) => {
     //Defalt coordinates set to Denver Union Station
+    const { collection } = props
     const [ spotList, setSpotList ] = useState(props.collection.layers[0].spots)
+
+    useEffect(() => {
+        document.title = `Checkit - ${collection.location}`;
+    })
 
     const icon = L.divIcon({
         className: "spot-icon",
@@ -21,22 +26,12 @@ const FavoritesMap: React.FC<FavoritesMapProps> = (props) => {
         popupAnchor: [15, 0]
     });
 
-    const handleClickNewSpot = () => {
-        console.log("Clicked on a new spot")
-    };
-
     return (
         <>
             <TileLayer 
                 attribution="&copy; <a href='http://osm.org/copyright'>OpenStreetMap</a> contributors"
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
             />
-            <button
-                id="placeNewMarkerButton"
-                onClick={handleClickNewSpot}
-            >
-                +
-            </button>
             {
                 spotList.map((item, index) => ( 
                     <Marker
@@ -45,7 +40,7 @@ const FavoritesMap: React.FC<FavoritesMapProps> = (props) => {
                         position={[item.lat, item.lon]}
                         title={`${item.name}`}
                     >
-                        <Popup>
+                        <Popup >
                             <SpotPopup
                                 spot={item as Spot}
                             />
