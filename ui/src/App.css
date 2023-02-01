@@ -1,47 +1,41 @@
-.App {
+
+.top-menu, .bottom-menu {
+  background-color: rgb(13, 13, 144);
+  width: 100%;
+}
+
+.top-menu { 
+  padding: 10px;
+  font-size: 1.25em;
+  position: sticky;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bottom-menu {
+  position: fixed;
+  bottom: 0;
+  height: 7%;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.menu-item {
+  display: inline-flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.menu-title {
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.5em;
+  font-weight: bolder;
 }
 
 .leaflet-container {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 100%;
+  position: fixed;
+  height: 90vh;
+  width: 100vw;
 }
 
 .spot-icon {
@@ -55,5 +49,6 @@
   width: 30px;
   height: 30px;
   content: "🔴";
-  font-size: 20px;
+  font-size: 1em;
 }
+

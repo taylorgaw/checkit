@@ -1,0 +1,286 @@
+
+https://radar.com/documentation/api#autocomplete
+
+Example Autocomplete Request
+
+curl "https://api.radar.io/v1/search/autocomplete?query=illegal+pete\'s&near=39.7392,-104.9903" \  
+	-H "Authorization: prj_live_pk_bad29dd4f9e2b4bcc2c94749eaa29e42a4b79376"
+
+Example Autocomplete Response
+
+{
+    "meta":
+    {
+        "code": 200
+    },
+    "addresses":
+    [
+        {
+            "latitude": 39.7513,
+            "longitude": -105.000442,
+            "geometry":
+            {
+                "type": "Point",
+                "coordinates":
+                [
+                    -105.000442,
+                    39.7513
+                ]
+            },
+            "country": "United States",
+            "countryCode": "US",
+            "countryFlag": "🇺🇸",
+            "distance": 1602,
+            "city": "Denver",
+            "number": "1610",
+            "neighborhood": "Union Station",
+            "postalCode": "80202",
+            "stateCode": "CO",
+            "state": "Colorado",
+            "street": "16th St",
+            "layer": "place",
+            "formattedAddress": "1610 16th St, Denver, CO 80202 USA",
+            "placeLabel": "Illegal Pete's"
+        },
+        {
+            "latitude": 39.7403,
+            "longitude": -104.96323,
+            "geometry":
+            {
+                "type": "Point",
+                "coordinates":
+                [
+                    -104.96323,
+                    39.7403
+                ]
+            },
+            "country": "United States",
+            "countryCode": "US",
+            "countryFlag": "🇺🇸",
+            "distance": 2320,
+            "city": "Denver",
+            "number": "2001",
+            "neighborhood": "City Park West",
+            "postalCode": "80206",
+            "stateCode": "CO",
+            "state": "Colorado",
+            "street": "E Colfax Ave",
+            "layer": "place",
+            "formattedAddress": "2001 E Colfax Ave, Denver, CO 80206 USA",
+            "placeLabel": "Illegal Pete's"
+        },
+        {
+            "latitude": 39.711751,
+            "longitude": -104.987096,
+            "geometry":
+            {
+                "type": "Point",
+                "coordinates":
+                [
+                    -104.987096,
+                    39.711751
+                ]
+            },
+            "country": "United States",
+            "countryCode": "US",
+            "countryFlag": "🇺🇸",
+            "distance": 3068,
+            "city": "Denver",
+            "number": "270",
+            "neighborhood": "Speer",
+            "postalCode": "80209",
+            "stateCode": "CO",
+            "state": "Colorado",
+            "street": "S Broadway",
+            "layer": "place",
+            "formattedAddress": "270 S Broadway, Denver, CO 80209 USA",
+            "placeLabel": "Illegal Pete's"
+        },
+        {
+            "latitude": 39.769556,
+            "longitude": -105.009242,
+            "geometry":
+            {
+                "type": "Point",
+                "coordinates":
+                [
+                    -105.009242,
+                    39.769556
+                ]
+            },
+            "country": "United States",
+            "countryCode": "US",
+            "countryFlag": "🇺🇸",
+            "distance": 3748,
+            "city": "Denver",
+            "number": "1851",
+            "neighborhood": "Sunnyside",
+            "postalCode": "80211",
+            "stateCode": "CO",
+            "state": "Colorado",
+            "street": "W 38th Ave",
+            "layer": "place",
+            "formattedAddress": "1851 W 38th Ave, Denver, CO 80211 USA",
+            "placeLabel": "Illegal Pete's"
+        },
+        {
+            "latitude": 39.67826,
+            "longitude": -104.966638,
+            "geometry":
+            {
+                "type": "Point",
+                "coordinates":
+                [
+                    -104.966638,
+                    39.67826
+                ]
+            },
+            "country": "United States",
+            "countryCode": "US",
+            "countryFlag": "🇺🇸",
+            "distance": 7080,
+            "city": "Denver",
+            "number": "1744",
+            "neighborhood": "University",
+            "postalCode": "80210",
+            "stateCode": "CO",
+            "state": "Colorado",
+            "street": "E Evans Ave",
+            "layer": "place",
+            "formattedAddress": "1744 E Evans Ave, Denver, CO 80210 USA",
+            "placeLabel": "Illegal Pete's"
+        },
+        {
+            "latitude": 39.750338,
+            "longitude": -104.907675,
+            "geometry":
+            {
+                "type": "Point",
+                "coordinates":
+                [
+                    -104.907675,
+                    39.750338
+                ]
+            },
+            "country": "United States",
+            "countryCode": "US",
+            "countryFlag": "🇺🇸",
+            "distance": 7180,
+            "city": "Denver",
+            "number": "2230",
+            "neighborhood": "Park Hill",
+            "postalCode": "80207",
+            "stateCode": "CO",
+            "state": "Colorado",
+            "street": "Oneida St",
+            "layer": "place",
+            "formattedAddress": "2230 Oneida St, Denver, CO 80207 USA",
+            "placeLabel": "Illegal Pete's"
+        },
+        {
+            "latitude": 39.619136,
+            "longitude": -104.889404,
+            "geometry":
+            {
+                "type": "Point",
+                "coordinates":
+                [
+                    -104.889404,
+                    39.619136
+                ]
+            },
+            "country": "United States",
+            "countryCode": "US",
+            "countryFlag": "🇺🇸",
+            "distance": 15917,
+            "city": "Greenwood Village",
+            "number": "5312",
+            "postalCode": "80111",
+            "stateCode": "CO",
+            "state": "Colorado",
+            "street": "Dtc Blvd",
+            "layer": "place",
+            "formattedAddress": "5312 Dtc Blvd, Greenwood Village, CO 80111 USA",
+            "placeLabel": "Illegal Pete's"
+        },
+        {
+            "latitude": 40.007808,
+            "longitude": -105.275959,
+            "geometry":
+            {
+                "type": "Point",
+                "coordinates":
+                [
+                    -105.275959,
+                    40.007808
+                ]
+            },
+            "country": "United States",
+            "countryCode": "US",
+            "countryFlag": "🇺🇸",
+            "distance": 38596,
+            "city": "Boulder",
+            "number": "1124",
+            "postalCode": "80302",
+            "stateCode": "CO",
+            "state": "Colorado",
+            "street": "13th St",
+            "layer": "place",
+            "formattedAddress": "1124 13th St, Boulder, CO 80302 USA",
+            "placeLabel": "Illegal Pete's"
+        },
+        {
+            "latitude": 40.018801,
+            "longitude": -105.276279,
+            "geometry":
+            {
+                "type": "Point",
+                "coordinates":
+                [
+                    -105.276279,
+                    40.018801
+                ]
+            },
+            "country": "United States",
+            "countryCode": "US",
+            "countryFlag": "🇺🇸",
+            "distance": 39568,
+            "city": "Boulder",
+            "number": "1447",
+            "neighborhood": "Downtown",
+            "postalCode": "80302",
+            "stateCode": "CO",
+            "state": "Colorado",
+            "street": "Pearl St",
+            "layer": "place",
+            "formattedAddress": "1447 Pearl St, Boulder, CO 80302 USA",
+            "placeLabel": "Illegal Pete's"
+        },
+        {
+            "latitude": 40.587886,
+            "longitude": -105.074711,
+            "geometry":
+            {
+                "type": "Point",
+                "coordinates":
+                [
+                    -105.074711,
+                    40.587886
+                ]
+            },
+            "country": "United States",
+            "countryCode": "US",
+            "countryFlag": "🇺🇸",
+            "distance": 94748,
+            "city": "Fort Collins",
+            "number": "320",
+            "postalCode": "80524",
+            "stateCode": "CO",
+            "state": "Colorado",
+            "street": "Walnut St",
+            "layer": "place",
+            "formattedAddress": "320 Walnut St, Fort Collins, CO 80524 USA",
+            "placeLabel": "Illegal Pete's"
+        }
+    ]
+}

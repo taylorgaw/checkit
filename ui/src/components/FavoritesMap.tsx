@@ -1,10 +1,10 @@
+import { useEffect, useState } from 'react';
 import L from 'leaflet';
 import "leaflet/dist/leaflet.css";
 import { Marker, TileLayer, Popup } from 'react-leaflet';
 
 import  { UserMap, Spot } from '../resources/MapResources'
 import SpotPopup from './SpotPopup';
-import { useEffect, useState } from 'react';
 
 type FavoritesMapProps = {
     collection: UserMap;
