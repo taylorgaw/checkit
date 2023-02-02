@@ -1,4 +1,32 @@
+import { SideNavOption } from "../types/SideNavTypes";
 import { UserMap } from "./MapResources";
+
+export const CityNavOptions: SideNavOption[] = [
+    {
+        name: 'Baltimore',
+        link: '#'
+    },
+    {
+        name: 'Chicago',
+        link: '#'
+    },
+    {
+        name: 'Denver',
+        link: '#'
+    },
+    {
+        name: 'Philadelphia',
+        link: '#'
+    },
+    {
+        name: 'New Orleans',
+        link: '#'
+    },
+    {
+        name: 'San Francisco',
+        link: '#'
+    },
+]
 
 export const StockMap: UserMap = {
     "id": "",

@@ -3,16 +3,16 @@ import { Icon } from 'semantic-ui-react';
 type TopMenuProps = {
     mapName: string;
     handleClickMenu: () => void;
-    handleClickAdd: () => void;
+    handleClickUser: () => void;
 }
 
 const TopMenu: React.FC<TopMenuProps> = (props) => {
-    const { mapName, handleClickMenu, handleClickAdd } = props;
+    const { mapName, handleClickMenu, handleClickUser } = props;
     return (
         <div className="top-menu">
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" />
             <Icon 
-                name='bars'
+                name='map'
                 size='large'
                 inverted
                 link
@@ -21,12 +21,12 @@ const TopMenu: React.FC<TopMenuProps> = (props) => {
             />
             <div className='menu-item menu-title'>{mapName}</div>
             <Icon 
-                name='plus square outline' 
+                name='user circle' 
                 size='large' 
                 link
                 inverted
                 className='menu-item menu-button'
-                onClick={handleClickAdd}
+                onClick={handleClickUser}
             />
         </div>
     )
