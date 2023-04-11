@@ -1,7 +1,7 @@
 import { Icon } from "semantic-ui-react";
 import { SideNavOption } from "../types/SideNavTypes";
 
-const OPEN_SIZE = "30%";
+const OPEN_SIZE = "50%";
 const CLOSED_SIZE = "0%";
 
 type CitySideNavProps = {
@@ -32,9 +32,9 @@ const CitySideNav: React.FC<CitySideNavProps> = (props) => {
             />
             { options.map((option: SideNavOption) => {
                 return (
-                    <>
+                    <div key={option.name}>
                         <a className="city" href={option.link}>{option.name}</a>
-                    </>
+                    </div>
                 );
             })}
             <br/>

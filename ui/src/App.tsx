@@ -8,15 +8,23 @@ import { UserMap } from './resources/MapResources';
 import TopMenu from './components/TopMenu';
 import BottomMenu from './components/BottomMenu';
 import CitySideNav from './components/CitySideNav';
+import FavoritesList from './components/FavoritesList';
 
 
 function App() {
   const [map, setMap] = useState<UserMap>(StockMap);
   const position: LatLngExpression = [map.lat, map.lon];
   const [isCitySideNavOpen, setIsCitySideNavOpen] = useState<boolean>(false);
+  const [isListOpen, setIsListOpen] = useState<boolean>(false);
 
   const handleClickCityMenu = () => {
     setIsCitySideNavOpen(true);
+  };
+
+  const handleClickListMenu = () => {
+    setIsListOpen(!isListOpen);
+    console.log(isListOpen)
+
   };
 
   const handleClickCityClose = () => {
@@ -35,14 +43,19 @@ function App() {
     <div className="App">
       <TopMenu 
         mapName={map.name}
-        handleClickUser={handleClickUser}
+        handleClickListMenu={handleClickListMenu}
         handleClickMenu={handleClickCityMenu}
+        isListOpen={isListOpen}
       />
       <CitySideNav
         title='Locations'
         options={CityNavOptions}
         isCityOpen={isCitySideNavOpen}
         handleClickCityClose={handleClickCityClose}
+      />
+      <FavoritesList
+        collection={map}
+        isListOpen={isListOpen}
       />
       <MapContainer
         center={position} 
@@ -54,6 +67,7 @@ function App() {
       </MapContainer> 
       <BottomMenu 
         handleClickAdd={handleClickAdd}
+        handleClickUser={handleClickUser}
       />
     </div>
   );

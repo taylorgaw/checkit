@@ -47,7 +47,7 @@ export const StockMap: UserMap = {
                     "name": "Black Project Spontaneous & Wild Ales",
                     "lat": 39.6933906,
                     "lon": -104.9872738,
-                    "recommendations": "Great sour and wild-fermented beers. PT Rec",
+                    "recommendations": "Great sour and wild-fermented beers",
                     "visited": false
                 },
                 {
@@ -63,7 +63,7 @@ export const StockMap: UserMap = {
                     "name": "Bierstadt Lagerhaus",
                     "lat": 39.7628161,
                     "lon": -104.9840373,
-                    "recommendations": "Authentic German Beirhaus. PT Rec",
+                    "recommendations": "Authentic German Beirhaus",
                     "visited": false
                 },
                 {
@@ -79,7 +79,7 @@ export const StockMap: UserMap = {
                     "name": "TRVE Brewing Company",
                     "lat": 39.719919,
                     "lon": -104.987686,
-                    "recommendations": "PT Rec. Brewery - kick ass metal bar with great beers on tap",
+                    "recommendations": "Brewery - kick ass metal bar with great beers on tap",
                     "visited": true
                 },
                 {
@@ -87,7 +87,7 @@ export const StockMap: UserMap = {
                     "name": "Bonfire Burritos",
                     "lat": 39.7478686,
                     "lon": -105.2107735,
-                    "recommendations": "Incredible breakfast burritos. They are always top tier recommended on all lists. Order way ahead or be prepared to wait. Their \"hot\" sauce does not fuck around.",
+                    "recommendations": "Incredible breakfast burritos. They are always top tier recommended on all lists. Order way ahead or be prepared to wait. Their \"hot\" sauce does not mess around.",
                     "visited": false
                 },
                 {
@@ -95,7 +95,7 @@ export const StockMap: UserMap = {
                     "name": "My Brother's Bar",
                     "lat": 39.7562205,
                     "lon": -105.0093141,
-                    "recommendations": "Very cool bar with decent burgers. Kerouac and Cassidy used to drink and hang out here. PT rec",
+                    "recommendations": "Very cool bar with decent burgers. Kerouac and Cassidy used to drink and hang out here.",
                     "visited": true
                 },
                 {
@@ -103,7 +103,7 @@ export const StockMap: UserMap = {
                     "name": "Crooked Stave Denver Taproom",
                     "lat": 39.780817,
                     "lon": -105.0050025,
-                    "recommendations": "One of Denver’s great OGs of all things sour. Each beer has a list of well-considered food pairings. - PT Rec.",
+                    "recommendations": "One of Denver’s great OGs of all things sour. Each beer has a list of well-considered food pairings.",
                     "visited": false
                 },
                 {
@@ -111,7 +111,7 @@ export const StockMap: UserMap = {
                     "name": "Cherry Cricket - Cherry Creek",
                     "lat": 39.7195591,
                     "lon": -104.9563925,
-                    "recommendations": "Great Burgers and wings. Their Green Chile is also money - PT Rec",
+                    "recommendations": "Great Burgers and wings. Their Green Chile is also money",
                     "visited": false
                 },
                 {
@@ -119,7 +119,7 @@ export const StockMap: UserMap = {
                     "name": "Sassafras American Eatery, Highlands",
                     "lat": 39.7623358,
                     "lon": -105.038824,
-                    "recommendations": "Great brunch spot. PT rec",
+                    "recommendations": "Great brunch spot.",
                     "visited": true
                 },
                 {
@@ -127,7 +127,7 @@ export const StockMap: UserMap = {
                     "name": "Our Mutual Friend Brewing",
                     "lat": 39.7605032,
                     "lon": -104.9824605,
-                    "recommendations": "One of the best in the city. Pairs well with some Owlbear bbq next door. PT Rec",
+                    "recommendations": "One of the best in the city. Pairs well with some Owlbear bbq next door.",
                     "visited": false
                 },
                 {
@@ -143,7 +143,7 @@ export const StockMap: UserMap = {
                     "name": "Star Kitchen",
                     "lat": 39.6973713,
                     "lon": -105.024273,
-                    "recommendations": "Great Dim Sum. Gets busy so get there early or order ahead. PT Rec",
+                    "recommendations": "Great Dim Sum. Gets busy so get there early or order ahead.",
                     "visited": false
                 },
                 {
@@ -151,7 +151,7 @@ export const StockMap: UserMap = {
                     "name": "The Grateful Gnome Sandwich Shoppe & Brewery",
                     "lat": 39.7765223,
                     "lon": -105.0432669,
-                    "recommendations": "Grateful Dead-themed brewpub. There are 55 varieties of sandwiches, both hot and cold, including several varieties featuring Taylor Ham - PT Rec",
+                    "recommendations": "Grateful Dead-themed brewpub. There are 55 varieties of sandwiches, both hot and cold, including several varieties featuring Taylor Ham",
                     "visited": true
                 },
                 {
